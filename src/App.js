@@ -10,7 +10,7 @@ import './App.css'
 export const App = () => {
   const [dogUrl, setDogUrl] = React.useState("https://images.dog.ceo/breeds/terrier-tibetan/n02097474_3058.jpg")
   return (<html language="ja">
-    <header> <title>Dog アプリ</title></header>
+    <header><title>Dog アプリ</title></header>
     <body><p>犬の画像を表示するサイトです</p><img src={dogUrl} alt="犬の画像" />
     <button onClick={() => fetch("https://dog.ceo/api/breeds/image/random").then(res => res.json()).then(result => (setDogUrl(result.message)))}>更新</button>
     </body></html>
