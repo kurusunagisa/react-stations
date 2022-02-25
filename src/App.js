@@ -11,6 +11,8 @@ export const App = () => {
   const [dogUrl, setDogUrl] = React.useState("https://images.dog.ceo/breeds/terrier-tibetan/n02097474_3058.jpg")
   return (<html language="ja">
     <header> <title>Dog アプリ</title></header>
-    <body><p>犬の画像を表示するサイトです</p><img src={dogUrl} alt="犬の画像" /></body></html>
+    <body><p>犬の画像を表示するサイトです</p><img src={dogUrl} alt="犬の画像" />
+    <button onClick={() => setDogUrl("https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg")}>更新</button>
+    </body></html>
   )
 }
