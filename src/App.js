@@ -12,7 +12,7 @@ export const App = () => {
   return (<html language="ja">
     <header> <title>Dog アプリ</title></header>
     <body><p>犬の画像を表示するサイトです</p><img src={dogUrl} alt="犬の画像" />
-    <button onClick={() => setDogUrl("https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg")}>更新</button>
+    <button onClick={() => fetch("https://dog.ceo/api/breeds/image/random").then(res => res.json()).then(result => (setDogUrl(result.message)))}>更新</button>
     </body></html>
   )
 }
