@@ -1,22 +1,33 @@
-.header__style {
+header {
     background-color: #c6c6c6;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    padding: 5px;
 }
 
 .description {
     font-size: 30px;
-    background-color: yellowgreen;
-    margin-top: auto;
-    margin-right: 20px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
 }
 
-.reflesh__button{
+img {
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+button{
     display: flex;
+    margin: auto;
+    margin-top: 10px;
     justify-content: space-between;
     align-items: center;
     background-color: navy;
     font-size: 30px;
     color: #ffffff;
-    border-radius: 100vh;
+    border-radius: 15px;
+    padding: 10px;
 }
